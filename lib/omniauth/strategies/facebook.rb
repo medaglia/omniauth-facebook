@@ -44,6 +44,8 @@ module OmniAuth
             'Website' => raw_info['website']
           },
           'location' => (raw_info['location'] || {})['name'],
+          'age_range' => raw_info['age_range'],
+          'devices' => raw_info['devices'],
           'verified' => raw_info['verified']
         })
       end
